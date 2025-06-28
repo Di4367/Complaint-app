@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Final_project</string>
+    <string name="a1">College ID</string>
+    <string name="a2">Password</string>
+    <string name="a3">Log In</string>
+    <string name="unmute">What is Unmute?\n
+
+    Unmute is a student-driven complaint and feedback app designed for the NMIMS Shirpur campus. It gives students a simple, direct platform to voice their concerns, report issues, and suggest improvements related to academic, hostel, mess, and overall campus life.
+
+    \nWhether it’s a technical glitch, poor mess food, Wi-Fi issues, or even a suggestion like building a temple on campus, Unmute ensures your voice is heard by the right authorities.
+
+        \nThe goal is to create a more responsive, transparent, and connected environment where students feel empowered to speak up and actively participate in improving campus life.</string>
+</resources>
