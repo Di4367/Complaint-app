@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:id="@+id/appName">
+
+    
+    <ImageView
+        android:id="@+id/unmuteLogo"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="258dp"
+        android:contentDescription="App Logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/unmuute" />
+
+    <Button
+        android:id="@+id/getStartedBtn"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="159dp"
+        android:backgroundTint="#7F9EA1"
+        android:text="Get Started"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</RelativeLayout>

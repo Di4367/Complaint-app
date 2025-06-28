@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#D2DCDD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit New Complaint"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#090808"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="16sp"
+            android:textColor="#545151"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:textColorHint="#666666"
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Brief title of the issue"
+            android:padding="12dp"
+            android:textColor="#0B0B0B"
+            android:backgroundTint="@color/black"
+            android:textSize="14sp" />
+
+        <!-- Category -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:textColorHint="#666666"
+            android:backgroundTint="#888888"
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Location -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editLocation"
+            android:textColorHint="#666666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Where is the issue located?"
+            android:padding="12dp"
+            android:textColor="#0B0B0B"
+            android:textSize="14sp" />
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:textColorHint="#666666"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Provide as much detail as possible about the issue"
+            android:gravity="top"
+            android:padding="12dp"
+            android:inputType="textMultiLine"
+            android:textColor="#0B0B0B"
+            android:textSize="14sp"
+            android:maxLength="500" />
+
+        <!-- Image Upload Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Images (Optional)"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:src="@drawable/baseline_arrow_circle_up_24"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Upload icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Upload images related to the issue"
+                android:textSize="14sp"
+                android:textColor="#555555" />
+        </LinearLayout>
+
+        <!-- Choose File Button -->
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:backgroundTint="#7F9EA1"
+            android:textAllCaps="false"
+            android:textColor="#0C0C0C"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Selected File Text -->
+        <TextView
+            android:id="@+id/selectedImageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No image selected"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="8dp" />
+
+        <!-- File size limit note -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum 3 images, 5MB each"
+            android:textSize="12sp"
+            android:textColor="#888888" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmitComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Complaint"
+            android:textAllCaps="false"
+            android:textColor="#0C0C0C"
+            android:backgroundTint="#7F9EA1"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
